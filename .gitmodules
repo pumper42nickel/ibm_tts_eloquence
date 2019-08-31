@@ -1,0 +1,3 @@
+[submodule "NVDA-IBMTTS-Driver"]
+	path = NVDA-IBMTTS-Driver
+	url = https://github.com/david-acm/NVDA-IBMTTS-Driver
