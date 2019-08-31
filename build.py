@@ -20,6 +20,8 @@ if not os.path.exists(ORIGINAL_FILE_NAME):
             shutil.copyfileobj(response, f)
 for util_file in ["msgfmt.exe", "xgettext.exe"]:
     shutil.copyfile(util_file, os.path.join(DRIVER_DIR, util_file))
+if not os.path.exists(SYNTH_DIR):
+    os.makedirs(SYNTH_DIR)    
 with zipfile.ZipFile(ORIGINAL_FILE_NAME, 'r') as zin:
     for entry_name in zin.namelist():
         if entry_name.startswith("synthDrivers/eloquence"):
