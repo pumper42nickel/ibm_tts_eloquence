@@ -4,6 +4,7 @@ IBM TTS eloquence driver. Compatible with Python 3 versions of NVDA.
 # Building
 Prerequisites:
 * python 3
+
 If scons is not installed, run:
 ```
 python3 -m pip install scons
@@ -20,3 +21,7 @@ cd ibm_tts_eloquence
 git submodule update --remote
 build
 ```
+
+# Driver
+This project uses IBM TTS driver for NVDA:  
+https://github.com/david-acm/NVDA-IBMTTS-Driver
